@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Maciel Oliveira">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Media queries</title>
+</head>
+<body>
+    <div class="col-12 col-s-12">
+        <div class="header">Header</div>
+    </div>
+
+    <div class="col-3 col-s-12">
+    <div class="menu"></div>   
+            <ul>
+            <li>Home</li>
+            <li>Sobre</li>
+            <li>Portfólio</li>
+            <li>Contato</li>
+        </ul>
+    </div></div> 
+    
+    <div class="col-6 col-s-12">
+        <div class="meio"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum obcaecati iste nihil saepe 
+        dolore ab commodi maiores aut provident voluptatem fugiat atque aliquam dicta 
+        temporibus consequatur iusto expedita, et deleniti?
+    </div>
+
+    <div class="col-3 col-s-12">
+        <div class="aside">Aside</div>
+    </div>
+    
+    <div class="col-6 col-s-12">
+        <div class="footer">Produzido por &reg; Maciel Oliveira 2024</div>
+    </div>
+</body>
+</html>
+
+
+<!--Código em CSS-->
+*{
+    margin:0% auto;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0, 12), 0 1px 2px rgba(0, 0, 0, 0, 24);
+}
+
+.menu li:hover {
+    background-color: #0099cc; cursor:pointer;
+}
+
+.meio {
+font-size: 14px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.aside {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.footer {
+    padding: 8px;
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+
+[class*="col-"] {
+    float:left;
+}
+
+@media only screen and{min-width: 768px; {
+    /*To desktop*/
+    .col-3 {width: 25%;}
+    .col-6 {width: 50%;}
+    .col-12 {width: 100%;}
+}
+
+@media only screen and{min-width: 768px; {
+    /*To mobile*/
+    .col-s-12 {width: 100%;}
+}
